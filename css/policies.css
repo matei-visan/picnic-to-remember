@@ -1,0 +1,18 @@
+/* Policies page only (policies.html). Shared styles are in style.css */
+
+/* Heading inside each policy box */
+.policy h3 {
+    font-family: "Bubblegum Sans", monospace;
+    color: rgb(71, 1, 137);
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+
+.policy ul {
+    padding-left: 22px;
+}
+
+.policy li {
+    margin-bottom: 6px;
+}

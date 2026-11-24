@@ -1,0 +1,50 @@
+/* Locations page only (locations.html). Shared styles are in style.css */
+
+#intro {
+    text-align: center;
+    font-family: "Poppins";
+    margin: 20px;
+    font-size: 20px;
+}
+
+#locations {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.location-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.location {
+    text-align: center;
+    width: 45%;
+}
+
+.location img {
+    width: 100%;
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.location img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.location a {
+    display: block;
+    font-family: "Poppins";
+    font-size: 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(71, 1, 137);
+}
+
+.location a:hover {
+    text-decoration: underline;
+}

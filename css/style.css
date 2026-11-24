@@ -1,0 +1,186 @@
+/* ==========================================================
+   Shared styles: used by EVERY page (header, nav, footer).
+   Page-specific styles live in their own file (home.css,
+   photos.css, locations.css, packages.css, policies.css).
+   ========================================================== */
+
+/* ---------- Page background ---------- */
+body {
+    background: linear-gradient(to top, rgb(255, 244, 244), rgb(203, 228, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Header ---------- */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.header-title {
+    flex: 1;
+}
+
+#name, #welcome {
+    color: rgb(120, 23, 10);
+    font-family: "Cookie";
+    margin: 0;
+}
+
+#name {
+    font-size: 100px;
+}
+
+#welcome {
+    font-family: "Nothing You Could Do";
+    font-size: 75px;
+    margin-top: 0;
+}
+
+.header-logo {
+    flex: 1;
+    text-align: right;
+}
+
+#logo {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+
+/* ---------- Navigation menu ---------- */
+#menu {
+    font-family: "Bubblegum Sans", monospace;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(71, 1, 137);
+}
+
+#menu li a:hover {
+    background-color: rgb(162, 174, 255);
+    border-radius: 100px;
+}
+
+/* ---------- Shared content blocks (Packages, Policies, ...) ---------- */
+.page-intro {
+    font-family: "Poppins";
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    margin: 20px 15%;
+}
+
+/* Section titles, e.g. "Our Packages", "Add-ons" */
+.section-title {
+    font-family: "Cookie";
+    color: rgb(120, 23, 10);
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 10px;
+}
+
+/* ---------- Info boxes (light blue text boxes) ---------- */
+.info-box {
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 32px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px 15%;
+    padding: 20px 30px;
+}
+
+.info-box ul {
+    margin: 5px 0;
+}
+
+.info-box p {
+    margin: 5px 0;
+}
+
+/* ---------- Call to action (WhatsApp) ---------- */
+.cta {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 20px;
+    margin: 40px 15% 50px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    border-radius: 100px;
+    background-color: rgb(162, 174, 255);
+    color: rgb(71, 1, 137);
+    font-family: "Bubblegum Sans", monospace;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.cta a:hover {
+    background-color: rgb(140, 155, 255);
+}
+
+/* ---------- Footer / socials ---------- */
+footer {
+    background: linear-gradient(to top, rgb(255, 244, 244), rgb(203, 228, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* The whole item (icon + name) is one link */
+#socials a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: inherit;
+    text-decoration: none;   /* removes the black line under the icons */
+}
+
+#socials a i {
+    font-size: 40px;
+}
+
+#socials a span {
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+#socials a:hover span {
+    text-decoration: underline;
+}

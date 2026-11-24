@@ -1,0 +1,23 @@
+/* Home page only (index.html). Shared styles are in style.css */
+
+#introImage {
+    text-align: center;
+}
+
+#Intro, #Intro2 {
+    font-family: "Poppins";
+    margin: 20px 15%;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+#Intro {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+#Intro2 {
+    font-size: 20px;
+    line-height: 50px;
+}

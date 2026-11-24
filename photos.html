@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photos - Picnic to Remember</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/photos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cookie&family=Nothing+You+Could+Do&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/081989db46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-title">
+                <h1 id="welcome">Welcome to</h1>
+                <h1 id="name">Picnic to Remember</h1>
+            </div>
+            <div class="header-logo">
+                <img id="logo" src="assets/picnictoremember.png" alt="Picnic to Remember Logo">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="policies.html">Policies</a></li>
+        </ul>
+    </nav>
+
+    <section id="photos">
+        <div class="photo-row">
+            <img src="assets/introImage.jpeg" alt="Photo 1" onclick="openFullscreen(this.src)">
+            <img src="assets/PHOTO-2.jpg" alt="Photo 2" onclick="openFullscreen(this.src)">
+            <img src="assets/PHOTO-3.jpg" alt="Photo 3" onclick="openFullscreen(this.src)">
+        </div>
+        <div class="photo-row">
+            <img src="assets/PHOTO-4.jpg" alt="Photo 4" onclick="openFullscreen(this.src)">
+            <img src="assets/PHOTO-5.jpg" alt="Photo 5" onclick="openFullscreen(this.src)">
+            <img src="assets/PHOTO-6.jpg" alt="Photo 6" onclick="openFullscreen(this.src)">
+        </div>
+        <div class="photo-row">
+            <img src="assets/PHOTO-7.jpg" alt="Photo 7" onclick="openFullscreen(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Photo 8" onclick="openFullscreen(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Photo 9" onclick="openFullscreen(this.src)">
+        </div>
+        <div class="photo-row">
+            <img src="https://via.placeholder.com/300" alt="Photo 10" onclick="openFullscreen(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Photo 11" onclick="openFullscreen(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Photo 12" onclick="openFullscreen(this.src)">
+        </div>
+    </section>
+
+    <div id="fullscreen-overlay" onclick="closeFullscreen()">
+        <img id="fullscreen-image" src="" alt="Full-Screen Image">
+    </div>
+
+    <footer>
+        <ul id="socials">
+            <li><a href="https://instagram.com/visanmana" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i><span>visanmana</span></a></li>
+            <li><a href="https://facebook.com/APicnicToRemember" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i><span>A Picnic to Remember</span></a></li>
+            <li><a href="https://wa.me/971504003811" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>+971 50 400 3811</span></a></li>
+            <li><a href="https://tiktok.com/@manavisan" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i><span>manavisan</span></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function openFullscreen(src) {
+            document.getElementById('fullscreen-image').src = src;
+            document.getElementById('fullscreen-overlay').style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            document.getElementById('fullscreen-overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
